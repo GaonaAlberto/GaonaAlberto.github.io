@@ -1,13 +1,12 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #abdefa;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-        background-color: #00aae4;
-
 }
 
 .signup-container {
@@ -30,7 +29,7 @@ h2 {
 
 label {
     font-weight: bold;
-    color: #000;
+    color: #000; /* Cambiado a negro (#000) */
 }
 
 input[type="text"],
