@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #005187;
+    background-color: #f2f2f2;
     margin: 0;
     padding: 0;
     display: flex;
@@ -9,8 +9,8 @@ body {
     height: 100vh;
 }
 
-.login-container {
-    background-color:#fdfdfd;
+.signup-container {
+    background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -19,7 +19,7 @@ body {
 
 h2 {
     text-align: center;
-    color: #444;
+    color: #333;
     margin-bottom: 20px;
 }
 
@@ -29,21 +29,22 @@ h2 {
 
 label {
     font-weight: bold;
-    color: #666;
+    color: #000; /* Cambiado a negro (#000) */
 }
 
 input[type="text"],
+input[type="email"],
 input[type="password"] {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #ccc;
     border-radius: 5px;
 }
 
 button {
     width: 100%;
     padding: 10px;
-    background-color: #005187; 
+    background-color: #007bff;
     border: none;
     border-radius: 5px;
     color: #fff;
@@ -52,4 +53,5 @@ button {
 }
 
 button:hover {
-    background-color: #005187;}
+    background-color: #0056b3;
+}
