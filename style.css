@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #abdefa;
+    background-color: #005187;
     margin: 0;
     padding: 0;
     display: flex;
@@ -43,7 +43,7 @@ input[type="password"] {
 button {
     width: 100%;
     padding: 10px;
-    background-color: #005187; /* verde pastel */
+    background-color: #005187; 
     border: none;
     border-radius: 5px;
     color: #fff;
