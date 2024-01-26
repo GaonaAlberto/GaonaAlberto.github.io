@@ -10,16 +10,16 @@ body {
 }
 
 .login-container {
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 300px;
 }
 
 h2 {
     text-align: center;
-    color: #333;
+    color: #333333;
     margin-bottom: 20px;
 }
 
@@ -29,14 +29,14 @@ h2 {
 
 label {
     font-weight: bold;
-    color: #555;
+    color: #555555;
 }
 
 input[type="text"],
 input[type="password"] {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 5px;
 }
 
@@ -46,7 +46,7 @@ button {
     background-color: #007bff;
     border: none;
     border-radius: 5px;
-    color: #fff;
+    color: #ffffff;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
