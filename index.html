@@ -1,29 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro</title>
+  <script>
+    function validarRegistro() {
+      var correo = document.getElementById("correo").value;
+      var contrasena = document.getElementById("contrasena").value;
+
+      if (!correo.includes('@')) {
+        alert("El correo debe contener el carácter '@'");
+        return false;
+      }
+
+      if (contrasena.length < 8) {
+        alert("La contraseña debe tener al menos 8 caracteres");
+        return false;
+      }
+
+      return true;
+    }
+  </script>
 </head>
 <body>
-    <div class="signup-container">
-        <h2>Log in</h2>
-        <form action="#" method="post">
-            <div class="input-group">
-                <label for="username">Username:</label><br>
-                <input type="text" id="username" name="username" required>
-            </div>
-            <div class="input-group">
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="input-group">
-                <label for="password">Password:</label><br>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <button type="submit">Sign Up</button>
-        </form>
-    </div>
+
+  <h2>Registro</h2>
+  
+  <form action="registro.php" method="POST" onsubmit="return validarRegistro()">
+    <label for="nombre">Nombre:</label><br>
+    <input type="text" id="nombre" name="nombre" required><br>
+    <label for="correo">Correo electrónico:</label><br>
+    <input type="email" id="correo" name="correo" required><br>
+    <label for="contrasena">Contraseña (mínimo 8 caracteres):</label><br>
+    <input type="password" id="contrasena" name="contrasena" minlength="8" required><br><br>
+    <input type="submit" value="Registrarse">
+  </form>
+
 </body>
 </html>
+
